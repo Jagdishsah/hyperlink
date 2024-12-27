@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            .class{
+                border: 5px solid black;
+            }
+        </style>
+        <title>
+            Addition
+        </title>
+    </head>
+    <body>
+        <div class="a">
+            <fieldset id="result">
+            Result
+            </fieldset>
+            <br>
+            <button id="1" onclick="a()">1</button>
+            <button id="2" onclick="b()">2</button>
+            <button id="3" onclick="c()">3</button>
+            <button id="+" onclick="add()">+</button>
+            <br>
+            <button id="4" onclick="d()">4</button>
+            <button id="5" onclick="e()">5</button>
+            <button id="6" onclick="f()">6</button>
+            <button id="-" onclick="sub()" >_</button>
+            <br>
+            <button id="7" onclick="g()">7</button>
+            <button id="8" onclick="h()">8</button>
+            <button id="9" onclick="i()">9</button>
+            <button id="*" onclick="mul()" >*</button>
+            <br>
+            <button id="0" onclick="j()">0</button>
+            <button id="C" onclick="clos()">C</button>
+            <button id="/" onclick="divid()">/</button>
+            <button id="=" onclick="ans()" >=</button>
+        </div>
+
+        
+        <script>
+            var fi="";
+            var res;
+
+            function a(){
+                fi=fi+"1";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function b(){
+                fi=fi+"2";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function c(){
+                fi=fi+"3";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function d(){
+                fi=fi+"4"; 
+                document.getElementById("result").innerHTML=fi;
+            }
+            function e(){
+                fi=fi+"5";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function f(){
+                fi=fi+"6";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function g(){
+                fi=fi+"7";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function h(){
+                fi=fi+"8";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function i(){
+                fi=fi+"9";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function j(){
+                fi=fi+"0";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function add(){
+                fi=fi+"+";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function sub(){
+                fi=fi+"-";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function mul(){
+                fi=fi+"*";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function divid(){
+                fi=fi+"/";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function clos(){
+                fi="";
+                document.getElementById("result").innerHTML=fi;
+            }
+            function ans(){
+                res=res = eval(fi);
+                document.getElementById("result").innerHTML=res;
+            }
+        </script>
+    </body>
+</html>
